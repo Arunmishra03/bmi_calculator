@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI CALCULATOR</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container bg-primary my-5" style="height: 50%; width: 50%">
+      <div>
+        <h1 style="color: crimson; text-align: center">BMI CALCULATOR</h1>
+      </div>
+      <div class="row mt-2">
+        <div class="col-md-6">
+          <input
+            type="text"
+            id="t1"
+            class="form-control"
+            placeholder="BMI VALUE"
+            readonly
+          />
+        </div>
+        <div class="col-md-6">
+          <button  class="form-control" id ="chart">BMI Categorization</button>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col">
+          <input
+            type="text"
+            id="t2"
+            class="form-control"
+            placeholder="Weight in Kg"
+            onfocus="clicked(this)"
+          />
+        </div>
+        <div class="col">
+          <input
+            type="text"
+            id="t3"
+            class="form-control"
+            placeholder="Height in Meter"
+            onfocus="clicked(this)"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md">
+          <div class="row mt-2">
+            <div class="col-sm-4">
+              <button onclick="click1(9)" class="form-control">9</button>
+            </div>
+            <div class="col-sm-4">
+              <button onclick="click1(8)" class="form-control">8</button>
+            </div>
+            <div class="col-sm-4">
+              <button onclick="click1(7)" class="form-control">7</button>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-sm-4">
+              <button onclick="click1(6)" class="form-control">6</button>
+            </div>
+            <div class="col-sm-4">
+              <button onclick="click1(5)" class="form-control">5</button>
+            </div>
+            <div class="col-sm-4">
+              <button onclick="click1(4)" class="form-control">4</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <div class="row mt-2">
+            <div class="col-sm-4">
+              <button onclick="click1(3)" class="form-control">3</button>
+            </div>
+            <div class="col-sm-4">
+              <button onclick="click1(2)" class="form-control">2</button>
+            </div>
+            <div class="col-sm-4">
+              <button onclick="click1(1)" class="form-control">1</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <div class="row my-2">
+            <div class="col-sm-4">
+              <button onclick="click1(0)" class="form-control">0</button>
+            </div>
+            <div class="col-sm-4">
+              <button onclick="click1('.')" class="form-control">.</button>
+            </div>
+            <div class="col-sm-4">
+              <button onclick="clear1()" class="form-control">Clear</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <button onclick="calculate()" class="form-control">Calculate</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
